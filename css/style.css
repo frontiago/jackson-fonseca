@@ -1,0 +1,220 @@
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container {
+    min-width: 300px; 
+    max-width:1200px;
+    position: relative;    
+}
+
+/********** HEADER **********/
+#header {
+    background-image:url("../images/bg-jf.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 0;
+    /*background: rgb(109,141,104);*/
+}
+
+.myLogo {
+    width: 30rem;
+    height: auto;
+    border: none;
+}
+
+.nav-right-info {
+    font: 1.5rem Verdana;
+    color: #CCC;
+    line-height: 210%;
+    text-align: left;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+/* número de telefone view mobiel */
+.navbar-cel {
+    font: 1.7rem Verdana;
+    color: #DDD;
+    line-height: 210%;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    border:none;
+    list-style-type: none;
+    margin:0 1.5rem 0.3rem 0;
+}
+
+/********** NAVBAR **********/
+.bg-dark-green {
+    background-color: rgb(47, 63, 44);
+}
+
+li a.my-links {
+    margin-right:2.8rem;
+    font: 1.6rem Verdana;
+    font-family: 'Squada One', cursive;
+    letter-spacing: 0.2rem;
+}
+
+/********** BACKGROUND DIV IMAGE ADV **********/
+#bg-adv {
+    background-image: url("../images/bg-lawyer22.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    min-height: 450px;
+    margin-bottom: 0;
+    padding-top:7rem;
+    border-radius:0;
+}
+
+#bg-adv h1 {
+    font-size:3.6rem;
+    font-family: 'Squada One', cursive;
+    color: #999;
+}
+
+#bg-adv p {
+    font:normal 1.4rem comic;
+    color: #FFF;
+    font-family: 'Squada One', cursive;
+}
+
+/********** SERVIÇOS **********/
+.my-icons {
+    display: inline-block; 
+    text-align: center;
+}
+#servicos {
+    background: #DDD;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#servicos h2 {
+    font: bold 1.3rem Verdana;
+    color: #5c8755;
+}
+
+#servicos p, #quem-somos p {
+    font:1.2rem Verdana;
+    color: #000;
+    padding: 0.3rem 0.3rem 0 0.3rem;
+    line-height: 150%;
+}
+
+#quem-somos {
+    background:#CCC;
+    margin-bottom: 0;
+}
+
+#quem-somos h4.text-center {
+    color: #5c8755;
+}
+
+#contato {
+    width: 100%;
+    min-height: 450px;
+    background: #DDD;
+    margin: 0;
+    padding: 4.5rem;
+}
+
+#contato h4, #quem-somos h4 {
+    font-family: 'Squada One', cursive;
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    color: #5c8755;
+}
+
+input[placeholder], textarea[placeholder]{
+    font: 1.3rem Verdana;
+}
+
+/********** FOOTER **********/
+footer {
+    padding: 4rem 3rem;
+}
+
+footer h5 {
+    font: bold 1.3rem Verdana;
+    color: white;
+}
+
+footer li a{
+    font: normal 1.3rem Verdana;
+    line-height: 170%;        
+}
+
+footer li a:before {
+    content: "- ";
+}
+
+#direitos {
+    background-color: rgb(22, 41, 19);
+    position:sticky;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#direitos p {
+    font: 1.6rem Verdana;
+    font-family: 'Squada One', cursive;
+    color: #FFF;
+    letter-spacing: 0.1rem;
+}
+
+.arrow {
+    position: fixed;
+    display: block;
+    z-index:99;
+    right: 45px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    top: 90%;
+    color: #999;
+}
+
+
+@media only screen and (max-width:750px){
+    html, body {
+        overflow-x: hidden;
+    }
+    .myLogo {
+        width: 95%;
+    }
+    .container {
+        width: 95%;
+    }
+    button.navbar-cel {
+        margin-right:0;
+        right: 0;
+        position:relative;
+    }
+    .cel-fix {
+        font: 1.1rem Verdana;
+    }
+    .nav-item {
+        margin-top:7px;
+        text-align: center;
+        letter-spacing: 510%;
+        font: 1.4rem Verdana;
+    }
+
+    .form-group {
+        width: 95%;
+    }
+
+    footer h5 {
+        font: bold 1.6rem Verdana;
+    }
+    footer li a{
+        font: normal 1.6rem Verdana;
+        line-height: 170%;        
+    }
+}
